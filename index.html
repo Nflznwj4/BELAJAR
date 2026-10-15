@@ -1,11 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <title>PORTOFOLIO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
     
+</head>
+
+<body>
+    <nav>
+        <h1>PORTOFOLIO</h1>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="proyek.html">Proyek</a></li>
+            <li><a href="tentang.html">Tentang Saya</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+    </nav>
+    <!-- bagian beranda -->
+    <section id="beranda" class="baru">
+        <h1>Halo, <span>Saya adalah Web Developer</span></h1>
+        <p>Web Developer | Desainer | Gamers</p>
+        <button onclick="scrollToContact()">Hubungi Saya</button>
+    </section>
+    <!-- bagian tentang -->
+    <section id="tentang" class="section">
+        <h2>Tentang Saya</h2>
+        <p>Saya adalah seorang pengembang web pemula yang tertarik dalam membangun situs web yang menarik dan
+            fungsional.</p>
+    </section>
+    <!-- bagian proyek -->
+    <section id="proyek" class="section">
+        <h2>Proyek Saya</h2>
+        <!-- <p>Beberapa proyek yang telah saya kerjakan:</p> -->
+        <div class="proyek-container">
+            <div class="proyek-item">
+                <h3>Proyek 1</h3>
+                <p>Deskripsi proyek 1.</p>
+            </div>
+            <div class="proyek-item">
+                <h3>Proyek 2</h3>
+                <p>Deskripsi proyek 2.</p>
+            </div>
+            <div class="proyek-item">
+                <h3>Proyek 3</h3>
+                <p>Deskripsi proyek 3.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="kontak" class="section">
+        <h2>Kontak</h2>
+
+        <form id="contactForm">
+            <input type="text" placeholder=" Masukan Nama" required>
+            <input type="email" placeholder=" Masukan Email" required>
+            <textarea placeholder=" Masukan Pesan" required></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+
+        <p id="message" class="message"></p>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2026 PEMULA. Wajar masih burik Boy.</p>
+    </footer>
+
 </body>
+<script src="js/script.js"></script>
+
 </html>
