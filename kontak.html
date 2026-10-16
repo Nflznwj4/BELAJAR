@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTOFOLIO</title>
+    <link rel="stylesheet" href="css/kontak.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <nav>
+        <div class="nav-brand">
+        <h1>Naufal<span>.</span></h1>
+    </div>
+    
+    <div class="nav-right">
+        <ul class="nav-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+            <li><a href="proyek.html">Proyek</a></li>
+            <li><a href="kontak.html" class="active">Kontak</a></li>
+        </ul>
+
+        <!-- Pemisah Vertikal & Indikator Bahasa -->
+        <div class="nav-divider"></div>
+        <div class="lang-switcher">
+            <span class="globe-icon">🌐</span> ID
+        </div>
+    </div>
+    </nav>
+    <!-- bagian beranda -->
+    <section id="beranda" class="baru">
+        <div class="hero-badge">
+            <span> 🟢 Tersedia untuk Proyek Baru</span>
+        </div>
+        <h1>Halo, <span class="highlight">Kami Web Developer</span></h1>
+        <p class="job-title">Web Developer | Desainer | Gamers</p>
+        <p class="description">Berfokus membangun pengalaman web yang modern, interaktif, dan berestetika tinggi dengan
+            gaya Glassmorphism.</p>
+        <div class="hero-buttons">
+            <button onclick="scrollToContact()" class="btn">Hubungi Saya</button>
+            <a href="proyek.html" class="btn-secondary">Lihat Proyek</a>
+        </div>
+    </section>
+    <!-- bagian tentang -->
+    <section id="tentang" class="section">
+        <h2>Tentang Saya</h2>
+        <div class="tentang-container">
+            <p>Saya adalah seorang pengembang web pemula yang tertarik dalam membangun situs web yang menarik dan
+                fungsional.</p>
+        </div>
+    </section>
+    <!-- bagian proyek -->
+    <section id="proyek" class="section">
+        <h2>Proyek Saya</h2>
+        <!-- <p>Beberapa proyek yang telah saya kerjakan:</p> -->
+        <div class="proyek-container">
+            <div class="proyek-item">
+                <h3>HTML5 & CSS3</h3>
+                <p>Proyek pertama saya yang menggunakan HTML5 dan CSS3 untuk membuat tampilan web yang modern.</p>
+            </div>
+            <div class="proyek-item">
+                <h3>javaScript</h3>
+                <p>Membuat halaman lebih interaktif dengan menggunakan JavaScript.</p>
+            </div>
+            <div class="proyek-item">
+                <h3>Figma</h3>
+                <p>Proyek desain UI/UX menggunakan Figma.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontak" class="section">
+        <h2>Kontak</h2>
+
+        <form id="contactForm">
+            <input type="text" placeholder=" Masukan Nama" required>
+            <input type="email" placeholder=" Masukan Email" required>
+            <textarea placeholder=" Masukan Pesan" required></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+
+        <p id="message" class="message"></p>
+
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h3>PORTOFOLIO</h3>
+            <p>Dibangun dengan sepenuh hati dan ditemani segelas kopi.</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/zenitvers?psln=MXdma3N5cjM1cjBoZQ==" target="_blank">
+                    <img src="asset/icons/instagram.svg" alt="Instagram"> instagram</a>
+                <a href="https://www.linkedin.com/in/naufal-zenit-wijayanto-72b211415?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                    target="_blank">
+                    <img src="asset/icons/x.svg" alt="x"> Twitter</a>
+                <a href="https://github.com/Nflznwj4" target="_blank" title="GitHub">
+                    <img src="asset/icons/github.svg" alt="GitHub"> GitHub
+                </a>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2026 PEMULA. Wajar masih burik Boy.</p>
+    </footer>
+
+</body>
+<script src="js/script.js"></script>
+
+</html>
