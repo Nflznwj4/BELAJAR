@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
@@ -24,15 +26,25 @@
     </nav>
     <!-- bagian beranda -->
     <section id="beranda" class="baru">
-        <h1>Halo, <span>Saya adalah Web Developer</span></h1>
-        <p>Web Developer | Desainer | Gamers</p>
-        <button onclick="scrollToContact()">Hubungi Saya</button>
+        <div class="hero-badge">
+            <span> 🟢 Tersedia untuk Proyek Baru</span>
+        </div>
+        <h1>Halo, <span class="highlight">Kami Web Developer</span></h1>
+        <p class="job-title">Web Developer | Desainer | Gamers</p>
+        <p class="description">Berfokus membangun pengalaman web yang modern, interaktif, dan berestetika tinggi dengan
+            gaya Glassmorphism.</p>
+        <div class="hero-buttons">
+            <button onclick="scrollToContact()" class="btn">Hubungi Saya</button>
+            <a href="proyek.html" class="btn-secondary">Lihat Proyek</a>
+        </div>
     </section>
     <!-- bagian tentang -->
     <section id="tentang" class="section">
         <h2>Tentang Saya</h2>
-        <p>Saya adalah seorang pengembang web pemula yang tertarik dalam membangun situs web yang menarik dan
-            fungsional.</p>
+        <div class="tentang-container">
+            <p>Saya adalah seorang pengembang web pemula yang tertarik dalam membangun situs web yang menarik dan
+                fungsional.</p>
+        </div>
     </section>
     <!-- bagian proyek -->
     <section id="proyek" class="section">
@@ -40,18 +52,17 @@
         <!-- <p>Beberapa proyek yang telah saya kerjakan:</p> -->
         <div class="proyek-container">
             <div class="proyek-item">
-                <h3>Proyek 1</h3>
-                <p>Deskripsi proyek 1.</p>
+                <h3>HTML5 & CSS3</h3>
+                <p>Proyek pertama saya yang menggunakan HTML5 dan CSS3 untuk membuat tampilan web yang modern.</p>
             </div>
             <div class="proyek-item">
-                <h3>Proyek 2</h3>
-                <p>Deskripsi proyek 2.</p>
+                <h3>javaScript</h3>
+                <p>Membuat halaman lebih interaktif dengan menggunakan JavaScript.</p>
             </div>
             <div class="proyek-item">
-                <h3>Proyek 3</h3>
-                <p>Deskripsi proyek 3.</p>
+                <h3>Figma</h3>
+                <p>Proyek desain UI/UX menggunakan Figma.</p>
             </div>
-
         </div>
     </section>
 
@@ -71,6 +82,11 @@
 
     <footer>
         <p>&copy; 2026 PEMULA. Wajar masih burik Boy.</p>
+        <div class="social-icons">
+            <a href="https://github.com/Nflznwj4" target="_blank">GitHub</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
     </footer>
 
 </body>
