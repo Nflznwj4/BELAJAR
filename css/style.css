@@ -487,3 +487,19 @@ footer {
 html {
     scroll-behavior: smooth;
 }
+/* GARIS HIJAU TENTANG KAMI */
+#tentang h2 ::after {
+    content: "";
+    display: block;
+    width:100px;
+    height:4px;
+    background-color: #ff3b4f;
+    margin: 20px auto 0;
+    border-radius: 5px
+}
+h2 .highlight {
+    color: #ff3b4f !important;
+}
+#tentang {
+    background: linear-gradient(135deg, #a00909a0, #200b0b);
+}
