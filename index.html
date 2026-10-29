@@ -16,24 +16,18 @@
 
 <body>
     <!-- Navigation Bar -->
-    <nav>
+    <nav class="animate-load delay-1">
         <div class="nav-brand">
-            <h1>Naufal<span>.</span></h1>
+            <h1>MAXGUADS<span>.</span></h1>
         </div>
 
         <div class="nav-right">
             <ul class="nav-links">
-                <li><a href="index.html" class="active">Beranda</a></li>
-                <li><a href="tentang.html">Tentang</a></li>
-                <li><a href="proyek.html">Proyek</a></li>
-                <li><a href="kontak.html">Kontak</a></li>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#proyek">proyek</a></li>
+                <li><a href="#kontak">Kontak</a></li>
             </ul>
-
-            <!-- Pemisah Vertikal & Indikator Bahasa -->
-            <div class="nav-divider"></div>
-            <div class="lang-switcher" id="langToggle">
-                <span class="globe-icon">🌐</span> <span id="langText">ID</span>
-            </div>
         </div>
     </nav>
     <!-- bagian beranda -->
@@ -42,34 +36,59 @@
         <div class="hero-card">
             <!-- Sisi Kiri: Teks & Informasi -->
             <div class="hero-text-content">
-                <p class="hero-greeting">HALO, SAYA</p>
-                <h1>Naufal Zenit<br>Wijayanto</h1>
-                <p class="job-title">Seorang<br> <span class="highlight-job">Web Developer | Desaigner | Gamers</span>
+                <p class="hero-greeting animate-load">HALO, KAMI </p>
+                <h1 class="animate-load delay-4">TIM <br>MAXGUADS</h1>
+                <p class="job-title animate-load delay-6">
+                    Seorang<br> <span class="highlight-job" id="typed-text"></span><span class="cursor">|</span>
                 </p>
 
                 <!-- Barisan Ikon Sosial Media Kecil di Tengah -->
                 <div class="hero-social-icons">
-                    <a href="#" target="_blank"><img src="asset/icons/github.svg" alt="GitHub"></a>
-                    <a href="#" target="_blank"><img src="asset/icons/instagram.svg" alt="Instagram"></a>
-                    <a href="#" target="_blank"><img src="asset/icons/x.svg" alt="X"></a>
+                    <a href="https://github.com/Nflznwj4" target="_blank"><img src="asset/icons/github.svg"
+                            alt="GitHub"></a>
+                    <a href="https://www.instagram.com/zenitvers?psln=MXdma3N5cjM1cjBoZQ==" target="_blank"><img
+                            src="asset/icons/instagram.svg" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/in/naufal-zenit-wijayanto-72b211415?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                        target="_blank"><img src="asset/icons/linkedin-logo-svgrepo-com.svg" alt="X"></a>
                 </div>
 
                 <p class="description">
-                    Berfokus membangun pengalaman web yang modern, interaktif, dan berestetika tinggi dengan
-                    gaya Glassmorphism.
+                    Berfokus membangun komunitas yang baik, bisa bermanfaat bagi alam dan sekitar, dan meredakan stres dari gamers dan 
                 </p>
 
                 <div class="hero-buttons">
-                    <a href="proyek.html" class="btn-primary">Lihat Proyek ↗</a>
-                    <a href="kontak.html" class="btn-secondary">Kontak Saya</a>
+                    <a href="#proyek" class="btn-primary">Lihat Proyek ↗</a>
+                    <a href="#kontak" class="btn-secondary">Kontak Saya</a>
                 </div>
             </div>
 
-            <!-- Sisi Kanan: Kartu Foto Profil Estetik -->
+            <!-- Sisi Kanan: Kartu Foto Profil Slider -->
             <div class="hero-image-wrapper">
-                <img src="asset/images/pemandangan.jpeg" alt="Foto Profil" class="hero-profile-image">
+                <!-- Container untuk slide gambar -->
+                <div class="slider-container">
+                    <div class="slide active">
+                        <img src="asset/images/sertifikat.jpeg" alt="Foto 1" class="hero-profile-image">
+                    </div>
+                    <div class="slide">
+                        <img src="asset/images/shervider.jpeg" alt="Foto 2" class="hero-profile-image">
+                    </div>
+                    <div class="slide">
+                        <img src="asset/images/pemandangan.jpeg" alt="Foto 3" class="hero-profile-image">
+                    </div>
+                </div>
+
+                <!-- Tombol Navigasi Kiri & Kanan -->
+                <button class="prev-btn" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next-btn" onclick="moveSlide(1)">&#10095;</button>
+
+                <!-- Indikator Titik (Dots) di bawah gambar -->
+                <div class="dots-container">
+                    <span class="dot active" onclick="currentSlide(0)"></span>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
             </div>
-        </div>
+
     </section>
     <!-- bagian tentang -->
     <section id="tentang" class="section">
