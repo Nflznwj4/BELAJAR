@@ -310,6 +310,16 @@ nav {
     color: #feffff;
 }
 
+#tentang h2 ::after {
+    content: "";
+    display: block;
+    width:100px;
+    height:4px;
+    background-color: #20d6a0;
+    margin: 20px auto 0;
+    border-radius: 5px
+}
+
 .tentang-container {
     max-width: 700px;
     margin: 25px auto 0;
