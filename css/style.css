@@ -506,13 +506,13 @@ button {
 }
 
 footer {
-    background: rgba(15, 23, 42, 0.8);
+    background: rgba(40, 12, 11, 1);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding: 40px 10% 30px;
     text-align: center;
-    color: #94a3b8;
+    color: #ffffff;
     margin-top: 60px;
 }
 
@@ -526,14 +526,14 @@ footer {
 }
 
 .footer-content h3 {
-    color: #ffffff;
+    color: #ef6109;
     font-size: 1.3rem;
     font-weight: 700;
     letter-spacing: 1px;
 }
 
 .footer-content p {
-    color: #64748b;
+    color: #ffffff;
     font-size: 0.9rem;
     margin-bottom: 5px;
 }
@@ -579,7 +579,7 @@ footer {
 
 .copyright {
     font-size: 0.8rem;
-    color: #64748b;
+    color: #ffffff;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     width: 100%;
     padding-top: 15px;
@@ -588,40 +588,4 @@ footer {
 
 html {
     scroll-behavior: smooth;
-}
-
-
-.cursor {
-    color: #ffffff;
-    font-weight: bold;
-    animation: blink 0.7s infinite;
-}
-
-@keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
-}
-/* GARIS HIJAU TENTANG KAMI */
-#tentang h2 ::after {
-    content: "";
-    display: block;
-    width:100px;
-    height:4px;
-    background-color: #ff3b4f;
-    margin: 20px auto 0;
-    border-radius: 5px
-}
-h2 .highlight {
-    color: #ff3b4f !important;
-}
-#tentang {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 80px 8%;
-    box-sizing: border-box;
-    background: linear-gradient(135deg, #a00909a0, #200b0b);
 }
