@@ -600,7 +600,7 @@ html {
     border-radius: 5px
 }
 h2 .highlight {
-    color: #ff3b4f !important;
+    color: #ff3b4f ;
 }
 #tentang {
     background: linear-gradient(135deg, #a00909a0, #200b0b);
