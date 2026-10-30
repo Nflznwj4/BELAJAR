@@ -1,4 +1,4 @@
-# 🚀 Portofolio Tim MAXGUADS
+<img width="1505" height="766" alt="image" src="https://github.com/user-attachments/assets/d1181fc2-a2b2-44d1-b162-f65bd664a2f9" /># 🚀 Portofolio Tim MAXGUADS
 
 Website portofolio tim modern dan interaktif yang dibangun untuk menampilkan profil, keahlian, serta proyek-proyek yang telah dikerjakan oleh tim MAXGUADS.
 
@@ -36,8 +36,8 @@ Proyek ini dibuat sebagai tugas kelompopk untuk mempraktikkan HTML, CSS, dan Jav
 ## 💻 Cara Menjalankan Website Secara Lokal
 Untuk menjalankan proyek ini di komputer lokal kamu, ikuti langkah-langkah berikut:
 
-1. 1. Clone repository:
-   git clone [https://github.com/ISI-USERNAME/ISI-NAMA-REPO.git](https://github.com/Nflznwj4/BELAJAR.git)
+1. Clone repository:
+   git clone [](https://github.com/Nflznwj4/BELAJAR.git)
 2. Masuk ke folder project.
 3. Buka file index.html di browser.
 
@@ -45,7 +45,7 @@ Untuk menjalankan proyek ini di komputer lokal kamu, ikuti langkah-langkah berik
 
 ## 📸 Dokumentasi Hasil Website
 
-* **Tampilan Beranda & Navbar:**
+* **Tampilan Website:**
   ![Tampilan Website](asset/images/home.png)
 
 
