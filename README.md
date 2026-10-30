@@ -46,6 +46,6 @@ Untuk menjalankan proyek ini di komputer lokal kamu, ikuti langkah-langkah berik
 ## 📸 Dokumentasi Hasil Website
 
 * **Tampilan Website:**
-  ![Tampilan Website](asset/images/home.png)
+  ![Tampilan Website](asset/images.png)
 
 
