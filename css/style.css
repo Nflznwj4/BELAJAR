@@ -5,6 +5,37 @@
     font-family: 'Poppins', Helvetica, sans-serif;
 }
 
+@keyframes slideUpFade {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-load {
+    animation: slideUpFade 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.3s; }
+.delay-3 { animation-delay: 0.4s; }
+.delay-4 { animation-delay: 0.5s; }
+.delay-5 { animation-delay: 0.6s; }
+html {
+    scroll-behavior: smooth;
+}
+
+.animate-load {
+    animation: slideUpFade 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.delay-1 { animation-delay: 0.5s; }
+.delay-2 { animation-delay: 0.50s; }
+
 body { 
     background: linear-gradient(135deg, #0b0f19, #111827); /* Contoh background gradasi gelap */
     color: #ffffff;
@@ -19,13 +50,13 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 18px 8%;
-    background: rgba(11, 17, 32, 0.85); 
+    background: rgba(43, 5, 5, 0.85); 
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(87, 5, 5, 0.05);
 }
 
 /* Brand / Logo Kiri */
@@ -37,7 +68,7 @@ nav {
 }
 
 .nav-brand h1 span {
-    color: #22c55e; 
+    color: #ff0303; 
 }
 
 /* Bagian Kanan (Menu + Bahasa) */
@@ -69,7 +100,7 @@ nav {
 
 /* Menu Aktif (Dengan Titik / Garis Bawah Bertenaga) */
 .nav-links a.active {
-    color: #22c55e;
+    color: #c52222;
     font-weight: 600;
 }
 
@@ -108,57 +139,61 @@ nav {
     color: #ffffff;
 }
 #beranda {
-    min-height: 85vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 40px 8%;
-    background: radial-gradient(circle at 10% 20%, rgba(34, 197, 94, 0.1) 0%, transparent 40%),
-                radial-gradient(circle at 90% 80%, rgba(15, 23, 42, 0.9) 0%, #0b1120 100%);
+    background: linear-gradient(135deg, #a00909a0, #200b0b);
 }
 
 .hero-card {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 60px;
-    max-width: 1100px;
+    gap: 80px;
+    max-width: 1300px;
     width: 100%;
+    margin-left: 0;
     background: transparent; /* Tanpa kotak besar di belakang */
 }
 
 /* Sisi Kiri: Konten Teks */
 .hero-text-content {
-    flex: 1.2;
+    flex: 1;
+    max-width: 650px;
     text-align: left;
 }
 
 .hero-greeting {
-    font-size: 0.85rem;
+    font-size: 1rem;
     letter-spacing: 2px;
-    color: #94a3b8;
+    color: #e0740f;
     margin-bottom: 8px;
     font-weight: 600;
 }
 
 #beranda h1 {
-    font-size: clamp(2.2rem, 3.5vw, 3.2rem);
-    font-weight: 700;
+    font-size: clamp(2.5rem, 6vw, 6.5rem);
+    font-weight: 800;
     color: #ffffff;
-    line-height: 1.15;
+    line-height: 1.1;
+    letter-spacing: 2px;
+    word-spacing: 4px;
     margin-bottom: 15px;
 }
 
 .job-title {
     font-size: 1rem;
-    color: #94a3b8;
+    color: #ffffff;
     margin-bottom: 15px;
 }
 
 .highlight-job {
     color: #ffffff;
+    font-size: 1.6rem;
     font-weight: 600;
-    border-bottom: 2px solid #22c55e; /* Garis bawah hijau neon tipis ala referensi */
+    border-bottom: 2px solid #faf9f900; 
     padding-bottom: 2px;
 }
 
@@ -182,8 +217,8 @@ nav {
 }
 
 .hero-social-icons a:hover {
-    background: rgba(34, 197, 94, 0.2);
-    border-color: #22c55e;
+    background: rgba(109, 4, 4, 0.329);
+    border-color: #ca0303;
 }
 
 .hero-social-icons img {
@@ -193,7 +228,7 @@ nav {
 }
 
 .description {
-    color: #94a3b8;
+    color: #ffffff;
     font-size: 0.92rem;
     line-height: 1.6;
     margin-bottom: 25px;
@@ -207,7 +242,7 @@ nav {
 }
 
 .btn-primary {
-    background: #10b981; /* Warna hijau tombol */
+    background: #ee4a4a; /* Warna hijau tombol */
     color: #ffffff;
     padding: 12px 24px;
     border-radius: 30px;
@@ -215,11 +250,11 @@ nav {
     font-weight: 600;
     font-size: 0.9rem;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+    box-shadow: 0 4px 15px rgba(131, 0, 0, 0.3);
 }
 
 .btn-primary:hover {
-    background: #059669;
+    background: #960505;
     transform: translateY(-2px);
 }
 
@@ -240,36 +275,102 @@ nav {
     background: rgba(255, 255, 255, 0.05);
 }
 
-/* Sisi Kanan: Kartu Foto Estetik (Glassmorphism Card) */
-/* Kelas Dasar (Wajib diberi transition agar pergerakannya mulus) */
+/* Sisi Kanan: Slider Foto Beranda */
 .hero-image-wrapper {
     flex: 1;
-    display: flex;
-    justify-content: center;
-    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1); /* Membuat gerakan naik/turun sangat halus */
-}
-
-.hero-profile-image {
-    width: 100%;
+    position: relative;
+    overflow: hidden;
     max-width: 360px;
     height: 440px;
-    object-fit: cover;
     border-radius: 24px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 254, 254, 0.15);
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
-    transition: all 0.4s ease; /* Transisi halus untuk warna border dan bayangan */
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.4s ease;
 }
 
-/* Efek saat kursor mendekati (Hover) */
 .hero-image-wrapper:hover {
-    transform: translateY(-8px) scale(1.02); /* Gambar sedikit naik ke atas dan membesar tipis */
+    transform: translateY(-8px) scale(1.02);
+    border-color: #af0e0e;
+    box-shadow: 0 35px 70px rgba(204, 11, 11, 0.527);
 }
 
-.hero-image-wrapper:hover .hero-profile-image {
-    border-color: #22c55e; /* Border berubah jadi hijau neon */
-    box-shadow: 0 35px 70px rgba(34, 197, 94, 0.25); /* Memunculkan efek cahaya hijau di bawah gambar */
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide img.hero-profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+}
+
+/* Tombol Navigasi Slider */
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+    transition: 0.3s;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: #af0e0e;
+}
+
+.prev-btn { left: 10px; }
+.next-btn { right: 10px; }
+
+/* Indikator Titik (Dots) */
+.dots-container {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dot.active, .dot:hover {
+    background-color: #af0e0e;
+    width: 20px;
+    border-radius: 4px;
+}
 .baru {
     height: 100vh;
     background: linear-gradient(to right, #00f2fe, #4facfe);
@@ -310,16 +411,18 @@ nav {
 }
 
 .tentang-container {
-    max-width: 700px;
+    width: 100%;
+    max-width: 900px; /* Lebar maksimal kartu teks di tengah */
     margin: 25px auto 0;
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 16px;
-    padding: 30px;
+    padding: 40px;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
     text-align: center;
+    box-sizing: border-box;
 }
 
 .tentang-container p {
@@ -403,13 +506,13 @@ button {
 }
 
 footer {
-    background: rgba(15, 23, 42, 0.8);
+    background: rgba(40, 12, 11, 1);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding: 40px 10% 30px;
     text-align: center;
-    color: #94a3b8;
+    color: #ffffff;
     margin-top: 60px;
 }
 
@@ -423,14 +526,14 @@ footer {
 }
 
 .footer-content h3 {
-    color: #ffffff;
+    color: #ef6109;
     font-size: 1.3rem;
     font-weight: 700;
     letter-spacing: 1px;
 }
 
 .footer-content p {
-    color: #64748b;
+    color: #ffffff;
     font-size: 0.9rem;
     margin-bottom: 5px;
 }
@@ -476,7 +579,7 @@ footer {
 
 .copyright {
     font-size: 0.8rem;
-    color: #64748b;
+    color: #ffffff;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     width: 100%;
     padding-top: 15px;
@@ -500,5 +603,5 @@ h2 .highlight {
     color: #ff3b4f !important;
 }
 #tentang {
-    background: linear-gradient(135deg, #a00909a0, #541717);
+    background: linear-gradient(135deg, #a00909a0, #200b0b);
 }
