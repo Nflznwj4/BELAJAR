@@ -139,56 +139,62 @@ nav {
     color: #ffffff;
 }
 #beranda {
-    min-height: 85vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px 8%;
-    background: linear-gradient(135deg, #a00909a0, #200b0b);
+    padding: 0 5%;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #c90909a0, #200b0b);
 }
 
 .hero-card {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 60px;
-    max-width: 1100px;
+    gap: 80px;
+    max-width: 1300px;
     width: 100%;
+    margin-left: 0;
     background: transparent; /* Tanpa kotak besar di belakang */
 }
 
 /* Sisi Kiri: Konten Teks */
 .hero-text-content {
-    flex: 1.2;
+    flex: 1;
+    max-width: 650px;
     text-align: left;
 }
 
 .hero-greeting {
-    font-size: 0.85rem;
+    font-size: 1rem;
     letter-spacing: 2px;
-    color: #94a3b8;
+    color: #e0740f;
     margin-bottom: 8px;
     font-weight: 600;
 }
 
 #beranda h1 {
-    font-size: clamp(2.2rem, 3.5vw, 3.2rem);
-    font-weight: 700;
+    font-size: clamp(2.5rem, 6vw, 6.5rem);
+    font-weight: 800;
     color: #ffffff;
-    line-height: 1.15;
+    line-height: 1.1;
+    letter-spacing: 2px;
+    word-spacing: 4px;
     margin-bottom: 15px;
 }
 
 .job-title {
     font-size: 1rem;
-    color: #94a3b8;
+    color: #ffffff;
     margin-bottom: 15px;
 }
 
 .highlight-job {
     color: #ffffff;
+    font-size: 1.6rem;
     font-weight: 600;
-    border-bottom: 2px solid #faf9f9; /* Garis bawah hijau neon tipis ala referensi */
+    border-bottom: 2px solid #faf9f900; 
     padding-bottom: 2px;
 }
 
@@ -586,7 +592,7 @@ html {
 
 
 .cursor {
-    color: #c5222200;
+    color: #ffffff;
     font-weight: bold;
     animation: blink 0.7s infinite;
 }
@@ -594,4 +600,91 @@ html {
 @keyframes blink {
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
+}
+
+nav, .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: rgba(32, 11, 11, 0.6); /* Warna dasar gelap transparan */
+    backdrop-filter: blur(12px);         /* Efek kaca blur */
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08); /* Garis pemisah tipis */
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+nav ul li a, .nav-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    position: relative;
+}
+
+/* Efek saat kursor mendekat (Hover) */
+nav ul li a:hover, .nav-links a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 59, 79, 0.6); /* Efek cahaya lembut */
+}
+
+/* Garis bawah animasi kecil saat di-hover */
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #ff3b4f; /* Warna merah aksen kamu */
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.logo, nav .logo {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.nav-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    position: relative;
+}
+
+/* Efek saat kursor mendekat (Hover) */
+.nav-links a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 59, 79, 0.6);
+}
+
+/* Garis bawah animasi kecil saat di-hover */
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #ff3b4f;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
 }
